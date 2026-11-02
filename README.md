@@ -51,16 +51,7 @@ No installation, build process, database or backend is required. For GitHub, upl
 
 Semantic HTML, CSS styling, responsive layouts, website navigation, asset organisation, accessibility fundamentals and team collaboration.
 
-## 👩‍💻 My Contribution
-
-According to the original project report, my contribution focused on semantic HTML5 elements, accessibility and image optimisation. The wider website was completed collaboratively as a university group project. The refreshed visual layout is a later portfolio revision.
-
 ## 📚 Project Background
 
 Developed for **WPR181 at Belgium Campus**. BASA, its missions and contact details are fictional. The original report is retained unchanged and describes the original submitted version. It includes the original contributor information.
 
-## 🌷 Portfolio Owner
-
-**Elaine Potgieter**  
-Bachelor of Computing Student | Data Science Specialisation  
-SQL • Power BI • Python • Business Analysis
