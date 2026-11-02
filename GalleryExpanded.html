@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Gallery | BASA</title>
+    <link href="BASA.css" rel="stylesheet">
+    <style>.row{display:flex;flex-wrap:wrap;justify-content:center}.column{flex:25%;max-width:25%;padding:5px}.column img{width:100%;cursor:pointer}.container{display:none;position:fixed;z-index:1;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,.8);padding-top:60px}.container img{margin:auto;display:block;width:80%;max-width:700px}.closebtn{position:absolute;top:15px;right:35px;color:#f1f1f1;font-size:40px;font-weight:700;cursor:pointer}.closebtn:hover{color:#bbb}#imgtext{text-align:center;color:#f1f1f1;padding:10px}@media (max-width:768px){.column{flex:50%;max-width:50%}}@media (max-width:480px){.column{flex:100%;max-width:100%}}</style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><a class="brand" href="index.html"><img src="Images/Logo.png" alt="BASA logo"><span>BASA<small>Belgium Aeronautics &amp; Space Administration</small></span></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="OurMission.html">Our Mission</a><a href="Gallery.html">Gallery</a><a href="Info.html">Our Story</a><a href="Contact.html">Contact</a></nav></header><main id="main-content">
+        <section class="page-intro"><p class="eyebrow">EXPLORE MORE</p>
+<h1>Mission image viewer</h1></section><section>
+            <h2>Mission Moments</h2>
+            <p>Take a look at the stunning visuals from our previous missions and sneak peeks of what we expect to find on Aurora. From spacecraft launches to glimpses of alien worlds, it’s all here.</p>
+            <div class="row">
+                <div class="column">
+                    <img alt="Spacecraft Launch" src="Images/spacecraft-launch.jpg" onclick="myFunction(this)" loading="lazy">
+                </div>
+                <div class="column">
+                    <img alt="Celestial Landscape" src="Images/celestial-landscape.jpg" onclick="myFunction(this)" loading="lazy">
+                </div>
+                <div class="column">
+                    <img alt="Space Exploration" src="Images/space-exploration.jpg" onclick="myFunction(this)" loading="lazy">
+                </div>
+                <div class="column">
+                    <img alt="Mission Team" src="Images/mission-team.jpg" onclick="myFunction(this)" loading="lazy">
+                </div>
+            </div>
+            <div class="container">
+                <span class="closebtn" onclick='this.parentElement.style.display="none"'>x</span>
+                <img id="expandedImg" loading="lazy">
+                <div id="imgtext"></div>
+            </div>
+        </section>
+    </main>
+    <script>function myFunction(e){var t=document.getElementById("expandedImg"),n=document.getElementById("imgtext");t.src=e.src,n.innerHTML=e.alt,document.querySelector(".container").style.display="block"}</script>
+<footer class="site-footer"><div>
+<strong>BASA</strong><p>Exploring beyond the horizon.</p>
+</div>
+<nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="OurMission.html">Our Mission</a><a href="Gallery.html">Gallery</a><a href="Info.html">Our Story</a><a href="Contact.html">Contact</a></nav><p class="project-note">Fictional organisation · Belgium Campus WPR181 group project · 2024</p></footer>
+</body>
+</html>
